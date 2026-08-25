@@ -1,0 +1,45 @@
+.div1 {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.para1 {
+    width: 450px;
+}
+
+.div2 {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.box {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-banner {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:355px;
+    width: 355px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+.box-para{
+    margin-top: 40px;
+    width: 90%;
+}

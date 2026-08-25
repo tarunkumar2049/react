@@ -1,0 +1,64 @@
+.div {
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.div-box {
+    display: flex;
+    /* overflow: hidden; */
+    gap: 20px;
+    margin: 50px 150px 0px 150px;
+
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    border-radius: 5px;
+    height: 550px;
+    width: 400px;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: #eb5757;
+    border-color: #eb5757;
+    padding: 7px 30px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: black;
+    border-color: black;
+}
+
+.btn2 {
+    margin-left: 43%;
+    margin-top: 60px;
+    background-color: black;
+    border-color: black;
+    padding: 7px 30px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+.btn2:hover {
+    background-color: #eb5757;
+    border-color: #eb5757;
+}
+
+.del {
+    display: flex;
+    gap: 10px;
+}
+
+.del del {
+    color: red;
+}

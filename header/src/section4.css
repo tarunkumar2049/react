@@ -1,0 +1,30 @@
+.section4 {
+    margin: 50px 150px 50px 150px;
+    display: flex;
+}
+
+.para {
+    background-color: rgb(39, 37, 37);
+    color: white;
+    padding: 50px 120px 50px 360px;
+    margin-left: 220px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.para h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.para p {
+    font-size: 18px;
+    width: 350px;
+}
+
+.sec4-image {
+    margin-top: 70px;
+    position: absolute;
+    height:390px;
+    border-radius: 10px;
+}

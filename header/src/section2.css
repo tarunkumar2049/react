@@ -1,0 +1,42 @@
+.div3 {
+    position: relative;
+}
+
+.div3 img {
+    width: 100%;
+}
+
+.div3-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 40%;
+    right: 150px;
+    color:white;
+}
+.div3-content h1{
+    text-align: end;
+    width: 550px;
+    font-size: 50px;
+}
+
+.div3-content p{
+    margin-top: 10px;
+    text-align: end;
+    width: 380px;
+    font-size: 20px;
+}
+
+.div3-button {
+    margin-top: 10px;
+    color: white;
+    margin-top: 20px;
+    width: 120px;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-color: white;
+    background-color: transparent;
+}
