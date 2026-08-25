@@ -1,9 +1,27 @@
-.footer-img {
 
-    margin-left: 150px;
-}
 
 .footer {
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px;
     background-color: rgb(39, 37, 37);
+}
+
+.foot1{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.foot2{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    color: white;
+}
+.icon{
+    display: flex;
+    gap: 10px;
+    color:white;
+    font-size:40px ;
 }
