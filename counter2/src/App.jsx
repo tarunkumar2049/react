@@ -7,18 +7,17 @@ export default function App() {
   const data = useContext(ExampleContext);
   const [count, setCount] = useState(data);
   function print() {
-    console.log("object");
-    setCount(count + 1)
+    setCount(count + 1);
   }
 
   useEffect(() => {
-    console.log("useEffect", count)
+    console.log("useEffect", count);
   })
 
   return (
     <div className="m-10">
       <span className="flex">{count}</span>
-      <button className="bg-amber-400 border-2 px-2" onClick={print} >ADD</button>
+      <button className="bg-amber-400 border-2 px-2" onClick={print}>ADD</button>
       <Component1 />
     </div>
   )

@@ -5,13 +5,12 @@ import { ThemeContext } from "./globalData/ThemeContext";
 
 export default function Component1() {
     const data1 = useContext(ExampleContext);
-    // const theme = useContext(ThemeContext);
     const { theme, toggleTheme } = useContext(ThemeContext);
     return (
         <div>
             <span className="flex">Theme : {theme}</span>
 
-            <button className="border-2 p-1" onClick={toggleTheme}>
+            <button className="border-2 px-2 rounded-2xl" onClick={toggleTheme}>
                 Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
             </button> 
             <br></br>
