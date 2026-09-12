@@ -18,7 +18,7 @@ export default function App() {
     <div className="m-10">
       <span className="flex">{count}</span>
       <button className="bg-amber-400 border-2 px-2" onClick={print}>ADD</button>
-      <Component1 />
+      <Component1 count={count} />
     </div>
   )
 }
