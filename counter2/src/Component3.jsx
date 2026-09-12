@@ -5,6 +5,7 @@ export default function Component3() {
     const abc = useContext(ExampleContext);
     return (
         <div>
+            <br></br>
             <h1>Data 3</h1>
             <span>Component 3 </span>
             <span>c3-- {abc}</span>
