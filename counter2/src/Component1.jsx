@@ -3,8 +3,9 @@ import Component2 from "./Component2"
 import { ExampleContext } from "./globalData/Context2"
 import { ThemeContext } from "./globalData/ThemeContext";
 
-export default function Component1({ count }) {
+export default function Component1() {
     const { theme, toggleTheme } = useContext(ThemeContext);
+    const data1 = useContext(ExampleContext)
     return (
         <div>
             <span className="flex">Theme : {theme}</span>
@@ -17,8 +18,8 @@ export default function Component1({ count }) {
 
             <h1>Data</h1>
             <span>Component 1 </span>
-            <span>c1-- {count} </span>
-            < Component2 count={count} />
+            <span>c1-- {data1} </span>
+            < Component2 />
         </div>
     )
 }
