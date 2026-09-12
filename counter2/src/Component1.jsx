@@ -11,7 +11,7 @@ export default function Component1() {
             <span className="flex">Theme : {theme}</span>
 
             <button className="border-2 px-2 rounded-2xl" onClick={toggleTheme}>
-                Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+                Switch to {theme === "light" ? "Dark" : "Light"} Mode
             </button> 
             <br></br>
             <br></br>
