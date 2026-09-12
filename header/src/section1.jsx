@@ -1,9 +1,11 @@
 import "./section1.css"
-export default function Section1() {
+import Section4 from "./section4"
+export default function Section1({name}) {
     return (
         <>
             <div className="div1">
                 <span>
+                    <Section4 name= {name} />
                     <p>WAYS TO SUPPORT</p>
                     <h1>Support Acme Outdoors.</h1>
                 </span>

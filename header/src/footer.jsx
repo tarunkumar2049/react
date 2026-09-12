@@ -1,4 +1,6 @@
 import "./footer.css"
+import {Link} from "react-router-dom";
+
 export default function Footer() {
 
     return (
@@ -7,8 +9,8 @@ export default function Footer() {
                 <img className="image" src="/src/assets/logo.svg" alt="logo" />
                 <span className="list">
                     <a>Home</a>
-                    <a>About</a>
-                    <a>Shop</a>
+                    <Link to="/about">About</Link>
+                    <Link to="/shop" >Shop</Link>
                     <a>Donate</a>
                     <a>Contact</a>
                 </span>

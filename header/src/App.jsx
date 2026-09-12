@@ -5,20 +5,27 @@ import Section2 from "./section2"
 import Section3 from "./section3"
 import Section4 from "./section4"
 import Footer2 from "./footer2"
-import Counter from "./counter"
+import { Route, Routes } from "react-router-dom"
+
 
 function App() {
+const name = "Tarun";
 
   return (
     <section>
       <Footer />
-      <Hero />
-      <Section1 />
-      <Section2 />
+      <Routes>
+        <Route path="/" element={<Hero  />} />
+        <Route path="/about" element={<Hero />} />
+        <Route path="/shop" element={<Section1 />} />
+      </Routes>
+      {/* <Hero /> */}
+      <Section1 name = {name} />
+      {/* <Section2 />
       <Section3 />
       <Section4 />
-      <Footer2 />
-      {/* <Counter /> */}
+      <Footer2 /> */}
+      
     </section>
   )
 }

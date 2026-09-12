@@ -1,13 +1,16 @@
 import "./section4.css"
-export default function Section4() {
+export default function Section4({name}) {
+    const num = 20;
     return (
         <>
             <div className="section4">
                 <span>
                     <img className="sec4-image" src="/src/assets/section4.png" alt="section4 image" />
                 </span>
-                <span className="para">
+                <span className="para1">
                     <h1>Shop Local.</h1>
+                                    <span className="bg-amber-500" style={{backgroundColor: "red"}}>{name}</span>
+
                     <p>
                         We know that during COVID-19, a lot of folks around the
                         city and state are feeling uneasy about the future - we’re
