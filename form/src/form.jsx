@@ -8,7 +8,7 @@ export default function Form() {
         console.log(form);
     }
     function handleChange(e) {
-        setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+        setForm((prev) => (    { ...prev, [e.target.name]: e.target.value }))
     }
     return (
         <form onSubmit={handleSubmit} className="flex flex-col m-10 text-xl items-center">
