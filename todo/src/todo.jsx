@@ -2,15 +2,32 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 export default function Todo() {
-  const [data, setData] = useState([]);
-  const [inpt, setInpt] = useState("");
-  //   console.log("inpt", inpt);
-  //   console.log(data);
+  const [data, setData] = useState(() => {
+    const fetch = localStorage.getItem("datas");
+    return fetch ? JSON.parse(fetch) : [];
+  });
 
-  function addTask() {
-    data.push(inpt);
-    localStorage.setItem("data", JSON.stringify(data));
+  const [inpt, setInpt] = useState("");
+
+  function addTask(e) {
+    e.preventDefault();
+    if (inpt != "") {
+      setData([...data, inpt]);
+    } else {
+      console.log("Invalid Value");
+      return null;
+    }
+    setInpt("");
   }
+
+  function removeData(id) {
+    const filteredData = data.filter((_, index) => index !== id);
+    setData(filteredData);
+  }
+
+  useEffect(() => {
+    localStorage.setItem("datas", JSON.stringify(data));
+  }, [data]);
 
   return (
     <>
@@ -25,12 +42,34 @@ export default function Todo() {
             placeholder="Add a Task"
           />
           <button
-            className="bg-green-500 border-2 border-green-500 rounded-md px-2 py-1"
+            className="bg-green-500 border-2 border-green-500 rounded-xl px-2 py-1 ml-6"
             onClick={addTask}
           >
             ADD
           </button>
-          <div>List : {data.map((item) => item)} </div>
+          <button onClick={localStorage.clear()}>Reset </button>
+          <div>
+            List :{" "}
+            {data.length === 0 ? (
+              <div>not data found</div>
+            ) : (
+              <div>
+                {data.map((item, index) => {
+                  return (
+                    <div className="flex gap-9" key={index}>
+                      <span className="p-2 bg-cyan-200 my-3">{item}</span>
+                      <button
+                        className="bg-red-700 cursor-pointer my-3"
+                        onClick={() => removeData(index)}
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </>
