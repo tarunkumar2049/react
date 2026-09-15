@@ -25,6 +25,10 @@ export default function Todo() {
     setData(filteredData);
   }
 
+  function removeAll() {
+    setData([]);
+  }
+
   useEffect(() => {
     localStorage.setItem("datas", JSON.stringify(data));
   }, [data]);
@@ -47,7 +51,15 @@ export default function Todo() {
           >
             ADD
           </button>
-          <button onClick={localStorage.clear()}>Reset </button>
+          <div className="flex justify-center mt-6">
+            <button
+              className="bg-yellow-500 border-2 border-yellow-500 rounded-xl px-8 py-1"
+              onClick={removeAll}
+            >
+              Reset All Tasks
+            </button>
+          </div>
+
           <div>
             List :{" "}
             {data.length === 0 ? (
@@ -57,9 +69,9 @@ export default function Todo() {
                 {data.map((item, index) => {
                   return (
                     <div className="flex gap-9" key={index}>
-                      <span className="p-2 bg-cyan-200 my-3">{item}</span>
+                      <span className="p-2 my-3">{item}</span>
                       <button
-                        className="bg-red-700 cursor-pointer my-3"
+                        className="bg-red-700 border-2 border-red-700 rounded-xl px-2 my-3"
                         onClick={() => removeData(index)}
                       >
                         Delete
