@@ -36,7 +36,7 @@ export default function Todo() {
   return (
     <>
       <div className="bg-gray-300 h-screen flex justify-center items-center">
-        <div className="w-full mx-40 ">
+        <div className="w-auto">
           <input
             id="input"
             value={inpt}
