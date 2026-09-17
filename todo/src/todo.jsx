@@ -14,7 +14,7 @@ export default function Todo() {
     if (inpt != "") {
       setData([...data, inpt]);
     } else {
-      console.log("Invalid Value");
+      const inv = "Invalid Value";
       return null;
     }
     setInpt("");
@@ -63,7 +63,9 @@ export default function Todo() {
           <div>
             List :{" "}
             {data.length === 0 ? (
-              <div>not data found</div>
+              <div>
+                if (inv){{ inv }}else{<span>not data found</span>}
+              </div>
             ) : (
               <div>
                 {data.map((item, index) => {
