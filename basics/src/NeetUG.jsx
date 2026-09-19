@@ -13,7 +13,7 @@ export default function NeetUG() {
 
   const [data, setData] = useState([]);
   // console.log("object", data);
-
+  
   useEffect(() => {
     const fetchData = async () => {
       const value = await fetch("https://fakestoreapi.com/products");
@@ -38,7 +38,7 @@ export default function NeetUG() {
         Counselling Platform
       </h1>
       <p>Registration for NeetUG</p>
-      <form onSubmit={handleSubmit} className="mt-5 flex flex-col gap-2 w-60">
+      {/* <form onSubmit={handleSubmit} className="mt-5 flex flex-col gap-2 w-60">
         <label>Name</label>
         <input
           type="text"
@@ -69,7 +69,7 @@ export default function NeetUG() {
         >
           SUBMIT
         </button>
-      </form>
+      </form> */}
       <div className="flex flex-col mt-8">
         API Call :
         <div className="flex flex-col gap-10">
@@ -79,7 +79,7 @@ export default function NeetUG() {
                 <div key={item.id} className="flex gap-1 flex-col items-start">
                   <h1>Id : {item.id}</h1>
                   <h1>Title : {item.title}</h1>
-                  <h1>Price : {item.newPrice}</h1>
+                  <h1>NewPrice : {item.newPrice}</h1>
                   <h1>Description : {item.description}</h1>
                 </div>
               );

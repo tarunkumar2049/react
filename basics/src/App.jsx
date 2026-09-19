@@ -4,8 +4,10 @@ import NeetPG from "./NeetPG";
 import NeetUG from "./NeetUG";
 import NeetSS from "./NeetSS";
 import CountRef from "./CountRef";
+import CountRef2 from "./CountRef@";
 import FocusRef from "./FocusRef";
 import UseMemo from "./UseMemo";
+import Memo from "./Memo";
 
 function App() {
   const [data, setData] = useState("");
@@ -42,16 +44,17 @@ function App() {
             onClick={() => setData(<NeetSS />)}
           >
             NeetSS
-          </button>
+          </button> 
         </span>
         <div>
           {data}
           {/* {fetchData()} */}
         </div>
       </div>
-      {/* <CountRef /> */}
-      {/* <FocusRef /> */}
-      <UseMemo />
+      <CountRef2 />
+      <FocusRef />
+      {/* <UseMemo /> */}
+      <Memo />
     </div>
   );
 }
