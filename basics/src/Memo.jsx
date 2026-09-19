@@ -8,7 +8,7 @@ export default function Memo() {
   console.log(memory);
   return (
     <div>
-      <div>{memory.filter((item) => item > 100000)}</div>
+      <div>{memory.filter((item) => item > 1000000)}</div>
     </div>
   );
 }
