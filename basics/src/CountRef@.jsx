@@ -7,7 +7,6 @@ export default function CountRef2() {
   function add() {
     setCount(count + 1);
   }
-  console.log(count1);
   return (
     <div>
       <div>{count}</div>

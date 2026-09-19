@@ -13,7 +13,7 @@ export default function NeetUG() {
 
   const [data, setData] = useState([]);
   // console.log("object", data);
-  
+
   useEffect(() => {
     const fetchData = async () => {
       const value = await fetch("https://fakestoreapi.com/products");
@@ -30,7 +30,7 @@ export default function NeetUG() {
     }));
   });
 
-return (
+  return (
     <div className="flex flex-col items-center">
       <h1 className="text-2xl my-6">
         India's Smart

@@ -44,7 +44,7 @@ function App() {
             onClick={() => setData(<NeetSS />)}
           >
             NeetSS
-          </button> 
+          </button>
         </span>
         <div>
           {data}

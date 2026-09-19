@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 export default function NeetMDS() {
   const [form, setForm] = useState({ name: "", rank: "", state: "" });
   function handleSubmit(e) {
-    
     e.preventDefault();
   }
   function handleChange(e) {
