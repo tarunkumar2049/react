@@ -2,7 +2,7 @@ import unnamed from "../assets/unnamed.png";
 
 export default function Section1() {
   return (
-    <div className="flex h-screen bg-[#ff6b2c1a] mt-20">
+    <div className="flex h-screen bg-linear-to-r from-white to-[#ff6b2c1a] mt-20">
       <div className="flex flex-col gap-8 m-40">
         <p className="bg-red-100 text-orange-500 w-40 px-2 rounded-2xl">
           ENTERPRISE READY

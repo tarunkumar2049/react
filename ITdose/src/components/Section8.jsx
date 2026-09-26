@@ -1,7 +1,29 @@
 import { MdOutlinePhone } from "react-icons/md";
 import { GoMail } from "react-icons/go";
+import { use, useEffect, useState } from "react";
 
 export default function Sectoin8() {
+  const [form, setForm] = useState({
+    name: " ",
+    hospital: "",
+    phone: " ",
+    message: " ",
+  });
+
+  const [val, setVal] = useState(0);
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (form.name && form.hospital && form.phone && form.message != "") {
+      console.log(form);
+      setVal(0);
+    } else {
+      setVal(1);
+    }
+  }
+
+  function handleChange(e) {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  }
   return (
     <div className="flex justify-center bg-[#e4e9ed] p-20">
       <div className="flex px-14 py-12 border border-gray-200 bg-white rounded-4xl shadow-2xl gap-16">
@@ -38,35 +60,55 @@ export default function Sectoin8() {
             </span>
           </div>
         </div>
-        <div className="flex flex-col w-100 gap-1">
+        <form onSubmit={handleSubmit} className="flex flex-col w-100 gap-1">
           <label className="font-semibold text-sm">NAME</label>
           <input
             type="text"
             className="rounded-xl border border-gray-200 px-4 py-3 bg-[#f6fafe]"
             placeholder="John Doe"
+            onChange={handleChange}
+            value={form.name}
+            name="name"
           />
           <label className="font-semibold text-sm">HOSPITAL NAME</label>
           <input
             type="text"
             className="rounded-xl border border-gray-200 px-4 py-3 bg-[#f6fafe]"
             placeholder="City General Hospital"
+            onChange={handleChange}
+            value={form.hospital}
+            name="hospital"
           />
           <label className="font-semibold text-sm">PHONE</label>
           <input
-            type="text"
-            className="rounded-xl border border-gray-200 px-4 py-3 bg-[#f6fafe]"
+            type="number"
             placeholder="+1 234 567 890"
+            className="rounded-xl border border-gray-200 px-4 py-3 bg-[#f6fafe]"
+            onChange={handleChange}
+            value={form.phone}
+            name="phone"
           />
           <label className="font-semibold text-sm">MESSAGE</label>
           <textarea
             type="text"
             className="rounded-xl border border-gray-200 px-4 py-3 h-30 bg-[#f6fafe]"
             placeholder="Tells us about your requirements..."
+            onChange={handleChange}
+            value={form.message}
+            name="message"
           />
-          <button className="bg-orange-500 text-white rounded-2xl py-5 font-bold mt-4">
+          <span
+            className={`${val == 1 ? "flex" : "hidden"} text-red-500 font-semibold text-center animate-pulse`}
+          >
+            Please fill all the details
+          </span>
+          <button
+            type="submit"
+            className="bg-orange-500 text-white rounded-2xl py-5 font-bold mt-4"
+          >
             Submit Request
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );
