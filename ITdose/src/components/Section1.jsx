@@ -2,8 +2,8 @@ import unnamed from "../assets/unnamed.png";
 
 export default function Section1() {
   return (
-    <div className="flex h-screen bg-linear-to-r from-white to-[#ff6b2c1a] mt-20">
-      <div className="flex flex-col gap-8 m-40">
+    <div className="flex lg:flex-row flex-col bg-linear-to-r from-white to-[#ff6b2c1a] p-10 pt-40 lg:pt-20">
+      <div className="flex flex-col gap-8 lg:m-40">
         <p className="bg-red-100 text-orange-500 w-40 px-2 rounded-2xl">
           ENTERPRISE READY
         </p>
@@ -18,7 +18,7 @@ export default function Section1() {
           high-performance ecosystem. Built for scale, security, and superior
           patient care
         </p>
-        <span className="flex gap-6 ">
+        <span className="flex flex-col md:flex-row gap-6 ">
           <button className="border bg-orange-500 shadow-orange-300 shadow-2xl hover:-translate-y-1 font-bold text-white px-8 py-4 rounded-2xl">
             Book Demo Now
           </button>
@@ -27,8 +27,8 @@ export default function Section1() {
           </button>
         </span>
       </div>
-      <div className="flex mt-20 mr-36">
-        <img className="rounded-3xl h-140 w-300" src={unnamed} />
+      <div className="flex mt-20 lg:mr-36">
+        <img className="rounded-2xl lg:rounded-3xl h-80 w-80 md:h-screen md:w-full lg:h-140 lg:w-300" src={unnamed} />
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ export default function Header() {
       <Link to="/">
         <span className="text-2xl font-bold">ITdose</span>
       </Link>
-      <span className="flex gap-8 text-gray-600">
+      <span className="md:flex hidden gap-8 text-gray-600 ">
         <Link className="hover:text-orange-500" to="/Modules">
           Modules
         </Link>
@@ -16,7 +16,7 @@ export default function Header() {
         </Link>
         <div className="group">
           <Link className="flex hover:text-orange-500 group">
-            Services{" "}
+            Services
             <span className="mt-1">
               <IoMdArrowDropdown />
             </span>
