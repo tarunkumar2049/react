@@ -64,7 +64,7 @@ export default function Todo() {
             List :{" "}
             {data.length === 0 ? (
               <div>
-                if (inv){{ inv }}else{<span>not data found</span>}
+                {/* if (inv){{ inv }}else{<span>not data found</span>} */}
               </div>
             ) : (
               <div>

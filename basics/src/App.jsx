@@ -8,6 +8,7 @@ import CountRef2 from "./CountRef@";
 import FocusRef from "./FocusRef";
 import UseMemo from "./UseMemo";
 import Memo from "./Memo";
+import Event from "./Event";
 
 function App() {
   const [data, setData] = useState("");
@@ -51,10 +52,11 @@ function App() {
           {/* {fetchData()} */}
         </div>
       </div>
-      <CountRef2 />
-      <FocusRef />
+      {/* <CountRef2 /> */}
+      {/* <FocusRef /> */}
       {/* <UseMemo /> */}
-      <Memo />
+      {/* <Memo /> */}
+      <Event />
     </div>
   );
 }
