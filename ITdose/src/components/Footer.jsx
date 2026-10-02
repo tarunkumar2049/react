@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="bg-[#171c1f] px-30 py-12 flex flex-col items-start overflow-hidden">
-      <div className="flex gap-18">
+    <div className="bg-[#020617] px-12 lg:px-30 py-12 flex flex-col items-start ">
+      <div className="flex flex-col md:flex-row gap-18">
         <div className=" flex flex-col gap-6">
           <h1 className="text-white font-semibold">ITdose</h1>
-          <p className="text-gray-500 w-70">
+          <p className="text-gray-500 md:w-40 lg:w-70">
             Leading provider of intelligent hospital management systems.
           </p>
         </div>
-        <div className="flex gap-56">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-25 lg:gap-56">
           <div>
             <h1 className="text-white font-semibold">Product</h1>
             <ul className="text-gray-500 flex flex-col gap-2 mt-4">

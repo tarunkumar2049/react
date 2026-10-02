@@ -11,8 +11,8 @@ export default function Section4() {
       <div className="flex justify-center pb-20">
         <h1 className="text-3xl font-semibold">Seamless Patient Workflow</h1>
       </div>
-      <div className="flex justify-center items-center relative  overflow-hidden">
-        <div className="bg-[#1e293b] absolute max-w-full h-1 top-10 left-60 right-60" />
+      <div className="flex justify-center items-center relative flex-col md:flex-row overflow-hidden">
+        <div className="bg-[#1e293b] absolute max-w-full h-1 top-10 left-60 right-60 md:left-10 md:right-10" />
         <div className="text-center flex flex-col items-center gap-4 p-2">
           <span className="flex justify-center p-5 w-16 text-2xl border-orange-500 shadow-xl shadow-orange-300/20 rounded-full bg-orange-500 z-10 hover:scale-115 ">
             <MdAppRegistration />

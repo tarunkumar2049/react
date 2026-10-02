@@ -9,7 +9,7 @@ export default function Section7() {
           Plans for Every Institution
         </h1>
       </div>
-      <div className="flex gap-8">
+      <div className="flex flex-col p-10 lg:p-0 md:flex-row gap-8">
         <div className="flex flex-col py-6 px-8 bg-white rounded-2xl border border-gray-300 ">
           <h1 className="text-2xl font-semibold py-2">Basics</h1>
           <p className="text-gray-500">
@@ -42,7 +42,7 @@ export default function Section7() {
               <p className="text-gray-400">IPD & Bed Mgmt</p>
             </span>
           </div>
-          <button className="border border-gray-300 px-24 py-4 rounded-2xl font-semibold hover:bg-gray-200 ">
+          <button className="border border-gray-300 lg:px-24 py-4 rounded-2xl font-semibold hover:bg-gray-200 ">
             Contact For Price
           </button>
         </div>
@@ -79,7 +79,7 @@ export default function Section7() {
               <p>Mobile Apps for Doctors</p>
             </span>
           </div>
-          <button className="bg-orange-500 text-white px-24 py-4 rounded-2xl font-semibold ">
+          <button className="bg-orange-500 text-white lg:px-24 py-4 rounded-2xl font-semibold ">
             Contact For Price
           </button>
         </div>
@@ -113,7 +113,7 @@ export default function Section7() {
               <p>Dedicated Support Lead</p>
             </span>
           </div>
-          <button className="border border-gray-400 px-24 py-4 rounded-2xl font-semibold hover:bg-gray-700">
+          <button className="border border-gray-400 lg:px-24 py-4 rounded-2xl font-semibold hover:bg-gray-700">
             Contact For Price
           </button>
         </div>

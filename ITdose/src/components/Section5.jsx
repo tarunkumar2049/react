@@ -4,22 +4,22 @@ export default function Section5() {
   const [val, setVal] = useState(0);
 
   return (
-    <div className="px-40 py-30 bg-[#f6fafe]">
+    <div className="px-8 lg:px-40 py-30 bg-[#f6fafe]">
       <div>
-        <h1 className="pb-10 text-3xl font-semibold">
+        <h1 className="pb-12 text-3xl font-semibold">
           Revolutionizing Clinical Workflows
         </h1>
       </div>
       <div>
         <div
-          className="border-b border-gray-300 py-8 hover:cursor-pointer "
+          className="border-b border-gray-300 py-5 lg:py-8 hover:cursor-pointer "
           onClick={() => {
             val == 1 ? setVal(0) : setVal(1);
           }}
         >
           <h1 className="text-2xl font-semibold">Future-Proof Scalability</h1>
           <div
-            className={`${val == 1 ? "flex " : "hidden"} flex-col gap-2 my-5 w-230`}
+            className={`${val == 1 ? "flex " : "hidden"} flex-col gap-2 my-5 lg:w-230`}
           >
             <p>
               ITdose architecture is built for the enterprise, supporting
@@ -47,7 +47,7 @@ export default function Section5() {
             Uncompromising Security (HIPAA)
           </h1>
           <div
-            className={`${val == 2 ? "flex " : "hidden"} flex-col my-5 w-230`}
+            className={`${val == 2 ? "flex " : "hidden"} flex-col my-5 lg:w-230`}
           >
             <p>
               Patient data is sacred. ITdose implements military-grade
@@ -69,7 +69,7 @@ export default function Section5() {
             Global Compliance Standards
           </h1>
           <div
-            className={`${val == 3 ? "flex " : "hidden"} flex-col gap-2 my-5 w-230`}
+            className={`${val == 3 ? "flex " : "hidden"} flex-col gap-2 my-5 lg:w-230`}
           >
             <p>
               Operating across multiple jurisdictions requires a system that

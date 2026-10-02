@@ -25,13 +25,13 @@ export default function Sectoin8() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
   return (
-    <div className="flex justify-center bg-[#e4e9ed] p-20">
-      <div className="flex px-14 py-12 border border-gray-200 bg-white rounded-4xl shadow-2xl gap-16">
+    <div className="flex p-10 lg:justify-center bg-[#e4e9ed] lg:p-20 ">
+      <div className="flex p-10 flex-col md:flex-row lg:px-14 py-12 border border-gray-200 bg-white rounded-4xl shadow-2xl md:gap-22 lg:gap-16">
         <div className="flex flex-col gap-8">
           <h1 className="text-3xl font-semibold w-48">
             Ready to <span className="text-orange-500">Transform?</span>
           </h1>
-          <p className="w-94 text-gray-600">
+          <p className="md:w-60 lg:w-94 text-gray-600">
             Fill in the details and our ERP specialist will reach out within 2
             hours for a customized demo.
           </p>
@@ -60,7 +60,10 @@ export default function Sectoin8() {
             </span>
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="flex flex-col w-100 gap-1">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col md:w-70 lg:w-100 gap-2 lg:gap-1"
+        >
           <label className="font-semibold text-sm">NAME</label>
           <input
             type="text"

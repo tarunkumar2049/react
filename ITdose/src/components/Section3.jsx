@@ -70,18 +70,18 @@ export default function Section3() {
       <div className="flex justify-center h-68">
         <div className="flex flex-col justify-center items-center gap-4">
           <h1 className="font-bold text-3xl">Enterprise ERP Suite</h1>
-          <p className="text-gray-600 w-160 text-center">
+          <p className="text-gray-600 lg:w-160 text-center">
             One integrated platform to manage every clinical and administrative
             department in your medical facility.
           </p>
         </div>
       </div>
-      <div className="flex gap-8">
-        <div className="flex flex-col bg-[#ffffff66] border-gray-100 border shadow-lg rounded-2xl h-3/screen w-76 ml-8">
+      <div className="flex gap-8 md:gap-0 flex-col md:flex-row">
+        <div className="flex flex-col overflow-y-auto  bg-[#ffffff66] border-gray-100 border shadow-lg rounded-2xl h-3/screen w-76 ml-8">
           <h1 className="pl-6 text-orange-600 text-sm font-medium mt-4 pb-2 border-b-2 border-b-gray-200 mx-4">
             MODULE HUB
           </h1>
-          <div className="flex flex-col gap-2 mt-6 font-semibold text-gray-500">
+          <aside className="flex h-60 lg:h-full flex-col gap-2 mt-6 font-semibold text-gray-500">
             <button
               onClick={() => setVal(1)}
               className={`${val === 1 ? "bg-orange-500 shadow-2xl text-white shadow-orange-500/30" : "hover:bg-white "} rounded-xl py-4 text-left mx-4 pl-5  text-sm flex gap-2 items-center hover:translate-x-2`}
@@ -172,9 +172,9 @@ export default function Section3() {
               </span>
               <span>BLOOD BANK</span>
             </button>
-          </div>
+          </aside>
         </div>
-        <div>{content}</div>
+        <aside className="overflow-y-auto md:w-120 lg:w-auto overflow-hidden ">{content}</aside>
       </div>
     </div>
   );
