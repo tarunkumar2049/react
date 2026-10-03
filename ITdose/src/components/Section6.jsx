@@ -2,7 +2,7 @@ import { IoStarSharp } from "react-icons/io5";
 
 export default function Section6() {
   return (
-    <div className="flex flex-col items-center py-22 bg-[#f0f4f8]">
+    <div className="flex flex-col items-center pb-10 lg:py-22 bg-[#f0f4f8]">
       <div>
         <h1 className="text-3xl font-semibold py-12 px-12 lg:px-0">
           Trusted by Healthcare Leaders
@@ -57,7 +57,7 @@ export default function Section6() {
             </span>
           </div>
         </div>
-        <div className="bg-white px-10 py-6 flex flex-col gap-4 rounded-2xl shadow-xl">
+        <div className="bg-white px-10 py-6 hidden lg:flex flex-col gap-4 rounded-2xl shadow-xl ">
           <span className="flex text-orange-400 text-2xl py-2">
             <IoStarSharp />
             <IoStarSharp />

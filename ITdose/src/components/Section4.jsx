@@ -9,7 +9,7 @@ export default function Section4() {
   return (
     <div className="bg-[#171c1f] text-white py-20">
       <div className="flex justify-center pb-20">
-        <h1 className="text-3xl font-semibold">Seamless Patient Workflow</h1>
+        <h1 className="text-2xl lg:text-3xl font-semibold ">Seamless Patient Workflow</h1>
       </div>
       <div className="flex justify-center items-center relative flex-col md:flex-row overflow-hidden">
         <div className="bg-[#1e293b] absolute max-w-full h-1 top-10 left-60 right-60 md:left-10 md:right-10" />

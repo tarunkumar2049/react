@@ -4,7 +4,7 @@ export default function Section5() {
   const [val, setVal] = useState(0);
 
   return (
-    <div className="px-8 lg:px-40 py-30 bg-[#f6fafe]">
+    <div className="px-8 lg:px-40 py-15 lg:py-30 bg-[#f6fafe]">
       <div>
         <h1 className="pb-12 text-3xl font-semibold">
           Revolutionizing Clinical Workflows

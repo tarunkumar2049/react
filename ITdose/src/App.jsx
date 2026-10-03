@@ -17,7 +17,6 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
-import Section7 from "./components/Section7";
 import Home from "./components/Home";
 
 function App() {

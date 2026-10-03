@@ -4,7 +4,7 @@ import { BsLightningCharge } from "react-icons/bs";
 
 export default function Section2() {
   return (
-    <div className="flex lg:flex-row md:flex-row flex-col justify-evenly h-full py-10 lg:py-0 lg:h-60 items-center bg-[#f0f4f8]">
+    <div className="flex lg:flex-row md:flex-row flex-col justify-evenly h-full py-10 lg:py-0 lg:h-60 items-center bg-[#f0f4f8] gap-10 lg:gap-0">
       <span className="flex flex-col items-center">
         <span className="text-orange-500 text-4xl">
           <PiHospitalFill />

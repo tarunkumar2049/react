@@ -83,7 +83,7 @@ export default function Section7() {
             Contact For Price
           </button>
         </div>
-        <div className="flex flex-col py-6 px-8 bg-[#171c1f] rounded-2xl border border-gray-300 text-white">
+        <div className="hidden lg:flex flex-col py-6 px-8 bg-[#171c1f] rounded-2xl border border-gray-300 text-white">
           <h1 className="text-2xl font-semibold py-2">Enterprice</h1>
           <p className="text-gray-500">For large Hospital Networks</p>
           <h1 className="py-8 text-4xl font-bold">Contact Us</h1>
