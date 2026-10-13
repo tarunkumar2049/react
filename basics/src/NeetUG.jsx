@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function NeetUG() {
   const [form, setForm] = useState({ name: "", rank: "", state: "" });
@@ -73,17 +74,31 @@ export default function NeetUG() {
       <div className="flex flex-col mt-8">
         API Call :
         <div className="flex flex-col gap-10">
-          {memory.length !== 0 ? (
-            memory.map((item) => {
-              return (
-                <div key={item.id} className="flex gap-1 flex-col items-start">
-                  <h1>Id : {item.id}</h1>
-                  <h1>Title : {item.title}</h1>
-                  <h1>NewPrice : {item.newPrice}</h1>
-                  <h1>Description : {item.description}</h1>
-                </div>
-              );
-            })
+          {memory.length !== 0 &&
+          memory.filter((item) => {
+            return item.id >= 0;
+          }) ? (
+            memory
+              .filter((item) => item.id >= 10)
+              .map((item) => {
+                return (
+                  <div
+                    key={item.id}
+                    className="flex gap-1 flex-col items-start"
+                  >
+                    <h1>Id : {item.id}</h1>
+                    <h1>Title : {item.title}</h1>
+                    {/* <h1>NewPrice : {item.newPrice}</h1> */}
+                    {/* <h1>Description : {item.description}</h1> */}
+                    <Link
+                      to={`/blog/${item.id}`}
+                      className="bg-amber-400 px-4 py-2 rounded-2xl"
+                    >
+                      view
+                    </Link>
+                  </div>
+                );
+              })
           ) : (
             <h1> Data not found</h1>
           )}

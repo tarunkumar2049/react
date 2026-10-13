@@ -52,11 +52,12 @@ function App() {
           {/* {fetchData()} */}
         </div>
       </div>
+
       {/* <CountRef2 /> */}
       {/* <FocusRef /> */}
       {/* <UseMemo /> */}
       {/* <Memo /> */}
-      <Event />
+      {/* <Event /> */}
     </div>
   );
 }

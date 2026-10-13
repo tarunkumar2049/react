@@ -1,7 +1,11 @@
-export default function page(){
-    return(
-        <>
-        Form is SUBMITTED.
-        </>
-    )
+import ProtectedRoute from "@/components/ProtectedRoute";
+export default function page() {
+  const isLoggedin = true;
+  
+  return (
+    <>
+      Form is SUBMITTED.
+      <ProtectedRoute isLoggedin={isLoggedin} />
+    </>
+  );
 }
