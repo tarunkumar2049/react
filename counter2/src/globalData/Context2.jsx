@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-export const ExampleContext = createContext(0);
+export const ExampleContext = createContext(0); 
 
 export default function ExampleProvider({ children }) {
   const [data, setData] = useState(50);
@@ -8,3 +8,4 @@ export default function ExampleProvider({ children }) {
     <ExampleContext.Provider value={data}>{children}</ExampleContext.Provider>
   );
 }
+ 

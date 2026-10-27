@@ -71,6 +71,7 @@ export default function NeetUG() {
           SUBMIT
         </button>
       </form> */}
+
       <div className="flex flex-col mt-8">
         API Call :
         <div className="flex flex-col gap-10">
@@ -79,7 +80,7 @@ export default function NeetUG() {
             return item.id >= 0;
           }) ? (
             memory
-              .filter((item) => item.id >= 10)
+              .filter((item) => item.id <= 20)
               .map((item) => {
                 return (
                   <div
