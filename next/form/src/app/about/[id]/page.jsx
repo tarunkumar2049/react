@@ -24,8 +24,8 @@ export default function Page() {
                 PRODUCT ITEM
               </h1>
 
-              <table >
-                <thead >
+              <table>
+                <thead>
                   <tr className="text-center">
                     <th className="text-amber-400 w-30">Product Id</th>
                     <th className="text-amber-400 w-30">User Id</th>
