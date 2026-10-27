@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
@@ -26,7 +27,12 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
+      <div className="flex gap-10 justify-center text-xl mt-2">
+        <Link className="bg-[#e4e9ed] px-4 py-2 rounded-2xl hover:bg-gray-400" href={`/`}>HOME</Link>
+        <Link className="bg-[#e4e9ed] px-4 py-2 rounded-2xl hover:bg-gray-400" href={`/about`}>ABOUT</Link>
+        <Link className="bg-[#e4e9ed] px-4 py-2 rounded-2xl hover:bg-gray-400" href={`/dashboard`}>DASHBOARD</Link>
+      </div>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col gap-10 w-150 border-2 m-10 rounded-2xl bg-[#e4e9ed] p-10"
